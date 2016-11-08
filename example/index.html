@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>ThetaS VR LiveStream</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <style>
+        body {
+            margin: 0px;
+            overflow: hidden;
+        }
+
+        #container {
+            position: absolute;
+            top: 0; bottom: 0;
+            left: 0; right: 0;
+        }
+
+        #canvas {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <canvas id="canvas" width="1920" height="1090">
+        </canvas>
+    </div>
+
+    <script src="../dist/ThetaLiveVR.js"></script>
+    <script>
+        let container = document.getElementById('container');
+        let canvas    = document.getElementById('canvas');
+        let liveVR    = new ThetaLiveVR(container, canvas, 'http://localhost:8080/myStream.jpg');
+        liveVR.init();
+    </script>
+</body>
+</html>

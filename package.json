@@ -1,0 +1,32 @@
+{
+  "name": "theta-live-vr",
+  "version": "1.0.0",
+  "description": "Sample web app displaying a VR-friendly mpeg Ricoh Theta S livestream usign three.js.",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "webpack",
+    "dev": "webpack-dev-server -d",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PymZoR/ThetaLiveVR.git"
+  },
+  "author": "Axel Mousset <axel@mousset.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PymZoR/ThetaLiveVR/issues"
+  },
+  "homepage": "https://github.com/PymZoR/ThetaLiveVR#readme",
+  "dependencies": {
+    "three-orbit-controls": "^72.0.0",
+    "three-stereo-effect": "^1.0.14",
+    "three.js": "^0.77.1",
+    "three.orientation": "^1.1.0",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
