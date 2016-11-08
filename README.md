@@ -18,13 +18,12 @@ let container = document.getElementById('container');
 let canvas    = document.getElementById('canvas');
 let streamURI = 'http://localhost:8080/stream.jpg';
 
-
 let liveVR    = new ThetaLiveVR(container, canvas, 'test.jpg');
 liveVR.init();
 ```
-  
+
 Full working example [here](example/index.html).  
-**Note**: this example use a proxy server to avoid CORS problems
+**Note**: this example uses a proxy server to avoid CORS problems
 
 
 
