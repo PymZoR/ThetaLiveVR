@@ -1,6 +1,8 @@
 const webpack = require('webpack');
 const path    = require('path');
 
+const TRAVIS  = process.env.TRAVIS ? JSON.parse(process.env.TRAVIS) : false;
+
 module.exports = {
     entry: './src/app.js',
     output: {
@@ -10,5 +12,6 @@ module.exports = {
         library: 'ThetaLiveVR',
         libraryTarget: 'umd'
     },
-    devtool: 'source-map'
+    devtool: 'source-map',
+    bail: TRAVIS
 };
