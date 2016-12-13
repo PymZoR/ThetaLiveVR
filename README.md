@@ -1,5 +1,5 @@
 # Theta live VR
-[![Build Status](https://david-dm.org/PymZoR/ThetaLiveVR/status.svg)](https://david-dm.org/PymZoR/ThetaLiveVR) [![Build Status](https://travis-ci.org/PymZoR/ThetaLiveVR.svg)](https://travis-ci.org/PymZoR/ThetaLiveVR)  
+[![dependencies Status](https://david-dm.org/PymZoR/ThetaLiveVR/status.svg)](https://david-dm.org/PymZoR/ThetaLiveVR) [![Build Status](https://travis-ci.org/PymZoR/ThetaLiveVR.svg)](https://travis-ci.org/PymZoR/ThetaLiveVR)  
 
 Javascript package helping you create VR-friendly (Cardboard compatible !) 360° livestream
 for the Ricoh Theta S.
