@@ -23,7 +23,7 @@
 </head>
 <body>
     <div id="container">
-        <canvas id="canvas" width="1920" height="1090">
+        <canvas id="canvas" width="1280" height="720">
         </canvas>
     </div>
 
@@ -31,7 +31,7 @@
     <script>
         let container = document.getElementById('container');
         let canvas    = document.getElementById('canvas');
-        let liveVR    = new ThetaLiveVR(container, canvas, 'http://localhost:8080/myStream.jpg');
+        let liveVR    = new ThetaLiveVR(container, canvas, '/myStream.jpg');
         liveVR.init();
     </script>
 </body>

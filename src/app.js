@@ -8,6 +8,8 @@ const OrbitControls       = require('three-orbit-controls')(THREE);
 const orientationControls = require('three.orientation');
 const tv                  = require('./thetaView');
 
+window.THREE = THREE;
+
 /**
  * Create a VR friendly view in a container, a
  * mjpeg stream URI and a canvas.
@@ -60,14 +62,17 @@ class ThetaLiveVR {
 
         let setOrientationControls = (e) => {
             if (!e.alpha) {
-              return;
+                return;
             }
 
             this.controls = orientationControls(this.camera);
             this.controls.connect();
             this.controls.update();
 
-            this.element.addEventListener('click', () => this.fullscreen(), false);
+            window.addEventListener('orientationchange', () => alert('1'), false);
+            window.addEventListener('deviceorientation', () => alert('2'), false);
+
+        this.element.addEventListener('click', () => this.fullscreen() , false);
             window.removeEventListener('deviceorientation', setOrientationControls, true);
         }
 
