@@ -20,7 +20,7 @@ let container = document.getElementById('container');
 let canvas    = document.getElementById('canvas');
 let streamURI = 'http://localhost:8080/stream.jpg';
 
-let liveVR    = new ThetaLiveVR(container, canvas, 'test.jpg');
+let liveVR    = new ThetaLiveVR(container, canvas, streamURI);
 liveVR.init();
 ```
 
