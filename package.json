@@ -23,7 +23,7 @@
     "three-stereo-effect": "^1.0.14",
     "three.js": "^0.77.1",
     "three.orientation": "^1.1.0",
-    "webpack": "^1.13.3"
+    "webpack": "^4.18.0"
   },
   "devDependencies": {
     "webpack": "^1.13.3",
